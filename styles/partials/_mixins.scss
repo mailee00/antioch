@@ -1,0 +1,30 @@
+@mixin orange-h1($colors) {
+    color: $colors;
+    font-family: 'Marck Script', cursive;
+    font-style:italic;
+    font-size: 35px;
+    margin: 0px 0px -10px 0px;
+}
+
+@mixin bold-h2 ($colors) {
+    color: $colors;
+    font-family: 'Montserrat', sans-serif;
+    font-size:35px;
+    text-transform:uppercase;
+    font-weight:700px;
+    margin: 5px 0px 5px 0px;
+}
+
+
+// In-Class Notes ---------- IGNORE -----------
+// @mixin button($colors) {
+//         background-color: $colors;
+//         color: white;
+//         border:none;
+//         border-radius:7px;
+//         width:150px;
+//         padding:5px;
+//         &:hover {
+//             background-color:darken($colors, 10%);
+//         }
+// }

@@ -1,0 +1,118 @@
+body {
+    font-family: "stevie-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  nav {
+    background-color: #150300;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navtitle {
+    display: flex;
+    float: left;
+    margin-top: -5px;
+  }
+  
+  .navtitle li a {
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: "stevie-sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .navitem {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navitem a:hover {
+    text-decoration: underline;
+  }
+  
+  .flex-container {
+    margin-top: 25px;
+    clear: both;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .flex-container > article {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .starry {
+    margin: 30px 0px -15px 0px;
+  }
+  
+  .flex-container > div {
+    width: 50%;
+  }
+  
+  .insideimg {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    font-size: 30px;
+    margin: 0px 0px -10px 0px;
+    color: orange;
+  }
+  
+  .fancyh1 {
+    font-family: "bello-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  h2 {
+    font-size: 35px;
+    margin: 0px 0px -30px 0px;
+    text-transform: uppercase;
+  }
+  
+  footer a {
+    color: orange;
+    text-transform: uppercase;
+    font-family: "stevie-sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+  }
+  
+  article p,
+  footer {
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  article p {
+    margin-bottom: 5px;
+  }
+  

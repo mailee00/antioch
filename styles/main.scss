@@ -1,0 +1,153 @@
+@use "./vendor/normalize";
+@use "./partials/colors";
+@use "./partials/mixins";
+@use "./partials/typography";
+
+// MAIN STYLING ------------------------------
+body {
+  font-family: typography.$primary-font;
+}
+
+// NAVIGATION ---------------------------------
+nav {
+  background-color: colors.$darker-background;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+li {
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+}
+
+.navtitle {
+  display: flex;
+  float: left;
+  margin-top: -5px;
+
+  li {
+    a {
+      text-decoration: underline;
+    font-size: 20px;
+    font-weight: 700;
+    }
+  }
+}
+
+.navitem {
+  font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+
+    a:hover {
+      text-decoration: underline;
+    }
+}
+
+// FLEXBOX CONTAINER--------------------------
+
+.flex-container {
+  margin-top: 25px;
+    clear: both;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.flex-container > article {
+  width: 50%;
+  text-align: center;
+}
+
+.starry {
+  margin: 3px 0px 3px 0px;
+}
+
+.flex-container > div {
+  width: 50%;
+}
+
+.insideimg {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fancy-h1 {
+  @include mixins.orange-h1(colors.$secondary-font-color);
+}
+
+.fancy-h2 {
+  @include mixins.bold-h2(colors.$darker-background);
+}
+
+
+footer {
+  a {
+    color: orange;
+    text-transform: uppercase;
+    font-family: "stevie-sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+  }
+}
+
+article {
+  p {
+    margin-top:5px;
+    margin-bottom: 5px;
+  }
+  p, footer {
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+// big screen and up
+@media (min-width: 1024px) {
+  nav {}
+}
+
+
+// In-Class Notes ---------- IGNORE --------
+// .main_btn {
+//   @include mixins.button(colors.$blue);
+// }
+
+// .secondary_btn {
+//   @include mixins.button(colors.$blueviolet);
+// }
+
+// p {
+//   font-family: typography.$primary;
+// }
+
+// nav {
+//   background-color: black;
+//   padding: 5px;
+//   ul {
+//     li {
+//       display: inline-block;
+//       a {
+//         color: white;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
